@@ -17,9 +17,9 @@ const corsOptions = {
   app.use(cors(corsOptions));
 app.use(express.json());
 
-// app.use("/",(req,res)=>{
-//     res.send("Hello")
-// })
+app.use("/",(req,res)=>{
+    res.send("Hello")
+})
 
 app.use("/todos",todoRoute)
 
