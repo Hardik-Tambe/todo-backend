@@ -8,7 +8,7 @@ const app = express()
 const todoRoute = require('./router/todo.js')
 
 const corsOptions = {
-    origin: ["http://localhost:3000"],
+    origin: ["https://react-todo-hardik.netlify.app/"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"],
     credentials: true,
     optionsSuccessStatus: 200,
