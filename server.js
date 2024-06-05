@@ -18,10 +18,6 @@ app.use(express.json());
 
 app.use("/todos", todoRoute);
 
-app.use("/",(req,res)=>{
-    res.send("Hello")
-})
-
 
 dbconnect().then(() => {
     app.listen(process.env.PORT || 3001, () => {
